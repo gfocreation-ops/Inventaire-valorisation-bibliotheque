@@ -1,0 +1,2 @@
+Mettre les photos à analyser dans ce dossier.
+Les fichiers optionnels d'informations notes.txt et photos.txt doivent être à la racine projet
