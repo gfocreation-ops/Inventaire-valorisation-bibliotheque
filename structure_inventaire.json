@@ -1,0 +1,524 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Réponse IA d'analyse visuelle — contrat 1.1",
+  "type": "object",
+  "properties": {
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string"
+          },
+          "document_id_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "position": {
+            "type": "string"
+          },
+          "type_document": {
+            "type": "string",
+            "enum": [
+              "livre",
+              "magazine",
+              "guide",
+              "autre",
+              "indetermine"
+            ]
+          },
+          "titre": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "sous_titre": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "auteurs": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "editeur": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "edition": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "isbn": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "collection": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "annee_edition": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "annee_impression": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "date_depot_legal": {
+            "type": "object",
+            "properties": {
+              "valeur": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confiance": {
+                "type": "string",
+                "enum": [
+                  "élevée",
+                  "moyenne",
+                  "faible"
+                ]
+              },
+              "origine": {
+                "type": "string",
+                "enum": [
+                  "photo",
+                  "non_etablie"
+                ]
+              },
+              "statut_lecture": {
+                "type": "string",
+                "enum": [
+                  "lisible",
+                  "incertain",
+                  "non_visible"
+                ]
+              }
+            },
+            "required": [
+              "valeur",
+              "confiance",
+              "origine",
+              "statut_lecture"
+            ],
+            "additionalProperties": false
+          },
+          "description_illustration": {
+            "type": "string"
+          },
+          "autres_textes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "texte": {
+                  "type": "string"
+                },
+                "statut_lecture": {
+                  "type": "string",
+                  "enum": [
+                    "lisible",
+                    "incertain"
+                  ]
+                },
+                "hesitation": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "texte",
+                "statut_lecture",
+                "hesitation"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "etat_general": {
+            "type": "object",
+            "properties": {
+              "appreciation": {
+                "type": "string",
+                "enum": [
+                  "tres_bon",
+                  "bon",
+                  "correct",
+                  "mauvais",
+                  "non_evaluable"
+                ]
+              },
+              "motif": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "appreciation",
+              "motif"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "reference",
+          "document_id_reference",
+          "position",
+          "type_document",
+          "titre",
+          "sous_titre",
+          "auteurs",
+          "editeur",
+          "edition",
+          "isbn",
+          "collection",
+          "annee_edition",
+          "annee_impression",
+          "date_depot_legal",
+          "description_illustration",
+          "autres_textes",
+          "etat_general"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "documents"
+  ],
+  "additionalProperties": false
+}
