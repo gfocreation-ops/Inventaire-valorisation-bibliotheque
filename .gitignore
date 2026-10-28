@@ -1,0 +1,9 @@
+# Données de travail locales — jamais versionnées
+/photos/*
+!/photos/.gitkeep
+
+# État et notes locales
+/inventaire.json
+/notes.txt
+/photos.txt
+/derniere_reponse_ia.txt
